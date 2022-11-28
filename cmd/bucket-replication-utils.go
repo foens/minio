@@ -27,8 +27,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/minio/internal/bucket/replication"
-	xhttp "github.com/minio/minio/internal/http"
+	"github.com/foens/minio/internal/bucket/replication"
+	xhttp "github.com/foens/minio/internal/http"
 )
 
 //go:generate msgp -file=$GOFILE

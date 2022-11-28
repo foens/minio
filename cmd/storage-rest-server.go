@@ -41,11 +41,11 @@ import (
 	jwtreq "github.com/golang-jwt/jwt/v4/request"
 	"github.com/gorilla/mux"
 	"github.com/minio/madmin-go"
-	"github.com/minio/minio/internal/config"
-	xhttp "github.com/minio/minio/internal/http"
-	xioutil "github.com/minio/minio/internal/ioutil"
-	xjwt "github.com/minio/minio/internal/jwt"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/config"
+	xhttp "github.com/foens/minio/internal/http"
+	xioutil "github.com/foens/minio/internal/ioutil"
+	xjwt "github.com/foens/minio/internal/jwt"
+	"github.com/foens/minio/internal/logger"
 	xnet "github.com/minio/pkg/net"
 )
 

@@ -21,12 +21,12 @@ import (
 	"os"
 
 	// MUST be first import.
-	_ "github.com/minio/minio/internal/init"
+	_ "github.com/foens/minio/internal/init"
 
-	minio "github.com/minio/minio/cmd"
+	minio "github.com/foens/minio/cmd"
 
 	// Import gateway
-	_ "github.com/minio/minio/cmd/gateway"
+	_ "github.com/foens/minio/cmd/gateway"
 )
 
 func main() {

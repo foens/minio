@@ -17,7 +17,7 @@
 
 package cache
 
-import "github.com/minio/minio/internal/config"
+import "github.com/foens/minio/internal/config"
 
 // Help template for caching feature.
 var (

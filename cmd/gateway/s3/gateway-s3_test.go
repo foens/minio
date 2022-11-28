@@ -21,9 +21,9 @@ import (
 	"testing"
 
 	miniogo "github.com/minio/minio-go/v7"
-	"github.com/minio/minio/internal/hash"
+	"github.com/foens/minio/internal/hash"
 
-	minio "github.com/minio/minio/cmd"
+	minio "github.com/foens/minio/cmd"
 )
 
 func errResponse(code string) miniogo.ErrorResponse {

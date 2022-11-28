@@ -28,9 +28,9 @@ import (
 	"strconv"
 	"strings"
 
-	xhttp "github.com/minio/minio/internal/http"
-	xioutil "github.com/minio/minio/internal/ioutil"
-	"github.com/minio/minio/internal/logger"
+	xhttp "github.com/foens/minio/internal/http"
+	xioutil "github.com/foens/minio/internal/ioutil"
+	"github.com/foens/minio/internal/logger"
 )
 
 // WalkDirOptions provides options for WalkDir operations.

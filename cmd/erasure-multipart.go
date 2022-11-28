@@ -31,9 +31,9 @@ import (
 
 	"github.com/klauspost/readahead"
 	"github.com/minio/minio-go/v7/pkg/set"
-	xhttp "github.com/minio/minio/internal/http"
-	"github.com/minio/minio/internal/logger"
-	"github.com/minio/minio/internal/sync/errgroup"
+	xhttp "github.com/foens/minio/internal/http"
+	"github.com/foens/minio/internal/logger"
+	"github.com/foens/minio/internal/sync/errgroup"
 	"github.com/minio/pkg/mimedb"
 )
 

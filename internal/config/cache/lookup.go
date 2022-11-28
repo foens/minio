@@ -21,7 +21,7 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/minio/minio/internal/config"
+	"github.com/foens/minio/internal/config"
 	"github.com/minio/pkg/env"
 )
 

@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/minio/madmin-go"
-	"github.com/minio/minio/internal/disk"
+	"github.com/foens/minio/internal/disk"
 )
 
 //go:generate stringer -type=osMetric -trimprefix=osMetric $GOFILE

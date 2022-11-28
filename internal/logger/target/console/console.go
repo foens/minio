@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/minio/minio/internal/color"
-	"github.com/minio/minio/internal/logger"
-	"github.com/minio/minio/internal/logger/message/log"
+	"github.com/foens/minio/internal/color"
+	"github.com/foens/minio/internal/logger"
+	"github.com/foens/minio/internal/logger/message/log"
 	"github.com/minio/pkg/console"
 )
 

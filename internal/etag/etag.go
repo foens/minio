@@ -119,7 +119,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/minio/minio/internal/fips"
+	"github.com/foens/minio/internal/fips"
 	"github.com/minio/sio"
 )
 

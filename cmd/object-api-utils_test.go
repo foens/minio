@@ -27,8 +27,8 @@ import (
 	"testing"
 
 	"github.com/klauspost/compress/s2"
-	"github.com/minio/minio/internal/config/compress"
-	"github.com/minio/minio/internal/crypto"
+	"github.com/foens/minio/internal/config/compress"
+	"github.com/foens/minio/internal/crypto"
 	"github.com/minio/pkg/trie"
 )
 

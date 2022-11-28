@@ -28,14 +28,14 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/minio/madmin-go"
-	"github.com/minio/minio/internal/config"
-	"github.com/minio/minio/internal/config/cache"
-	"github.com/minio/minio/internal/config/etcd"
-	xldap "github.com/minio/minio/internal/config/identity/ldap"
-	"github.com/minio/minio/internal/config/identity/openid"
-	"github.com/minio/minio/internal/config/policy/opa"
-	"github.com/minio/minio/internal/config/storageclass"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/config"
+	"github.com/foens/minio/internal/config/cache"
+	"github.com/foens/minio/internal/config/etcd"
+	xldap "github.com/foens/minio/internal/config/identity/ldap"
+	"github.com/foens/minio/internal/config/identity/openid"
+	"github.com/foens/minio/internal/config/policy/opa"
+	"github.com/foens/minio/internal/config/storageclass"
+	"github.com/foens/minio/internal/logger"
 	iampolicy "github.com/minio/pkg/iam/policy"
 )
 

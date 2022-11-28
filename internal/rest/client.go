@@ -29,8 +29,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	xhttp "github.com/minio/minio/internal/http"
-	"github.com/minio/minio/internal/logger"
+	xhttp "github.com/foens/minio/internal/http"
+	"github.com/foens/minio/internal/logger"
 	xnet "github.com/minio/pkg/net"
 )
 

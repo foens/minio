@@ -25,7 +25,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/minio/minio/internal/disk"
+	"github.com/foens/minio/internal/disk"
 )
 
 func TestFree(t *testing.T) {

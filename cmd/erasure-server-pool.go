@@ -33,10 +33,10 @@ import (
 	"github.com/minio/madmin-go"
 	"github.com/minio/minio-go/v7/pkg/set"
 	"github.com/minio/minio-go/v7/pkg/tags"
-	"github.com/minio/minio/internal/bucket/lifecycle"
-	"github.com/minio/minio/internal/config/storageclass"
-	"github.com/minio/minio/internal/logger"
-	"github.com/minio/minio/internal/sync/errgroup"
+	"github.com/foens/minio/internal/bucket/lifecycle"
+	"github.com/foens/minio/internal/config/storageclass"
+	"github.com/foens/minio/internal/logger"
+	"github.com/foens/minio/internal/sync/errgroup"
 	"github.com/minio/pkg/wildcard"
 )
 

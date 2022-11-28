@@ -27,9 +27,9 @@ import (
 
 	"github.com/shirou/gopsutil/v3/mem"
 
-	"github.com/minio/minio/internal/config/api"
-	xioutil "github.com/minio/minio/internal/ioutil"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/config/api"
+	xioutil "github.com/foens/minio/internal/ioutil"
+	"github.com/foens/minio/internal/logger"
 )
 
 type apiConfig struct {

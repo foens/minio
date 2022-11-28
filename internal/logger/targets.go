@@ -21,9 +21,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/minio/minio/internal/logger/target/http"
-	"github.com/minio/minio/internal/logger/target/kafka"
-	"github.com/minio/minio/internal/logger/target/types"
+	"github.com/foens/minio/internal/logger/target/http"
+	"github.com/foens/minio/internal/logger/target/kafka"
+	"github.com/foens/minio/internal/logger/target/types"
 )
 
 // Target is the entity that we will receive

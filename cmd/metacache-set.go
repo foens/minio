@@ -32,11 +32,11 @@ import (
 	"time"
 
 	jsoniter "github.com/json-iterator/go"
-	"github.com/minio/minio/internal/bucket/lifecycle"
-	"github.com/minio/minio/internal/bucket/object/lock"
-	"github.com/minio/minio/internal/color"
-	"github.com/minio/minio/internal/hash"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/bucket/lifecycle"
+	"github.com/foens/minio/internal/bucket/object/lock"
+	"github.com/foens/minio/internal/color"
+	"github.com/foens/minio/internal/hash"
+	"github.com/foens/minio/internal/logger"
 	"github.com/minio/pkg/console"
 )
 

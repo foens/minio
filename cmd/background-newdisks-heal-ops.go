@@ -32,8 +32,8 @@ import (
 	"github.com/dustin/go-humanize"
 	"github.com/minio/madmin-go"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/minio/minio/internal/color"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/color"
+	"github.com/foens/minio/internal/logger"
 	"github.com/minio/pkg/console"
 )
 

@@ -33,10 +33,10 @@ import (
 	"strings"
 
 	"github.com/minio/madmin-go"
-	"github.com/minio/minio/internal/auth"
-	"github.com/minio/minio/internal/handlers"
-	xhttp "github.com/minio/minio/internal/http"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/auth"
+	"github.com/foens/minio/internal/handlers"
+	xhttp "github.com/foens/minio/internal/http"
+	"github.com/foens/minio/internal/logger"
 )
 
 const (

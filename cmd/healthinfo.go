@@ -24,7 +24,7 @@ import (
 	"sync"
 
 	"github.com/minio/madmin-go"
-	"github.com/minio/minio/internal/disk"
+	"github.com/foens/minio/internal/disk"
 )
 
 // round returns value rounding to specified decimal places.

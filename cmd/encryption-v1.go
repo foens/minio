@@ -35,12 +35,12 @@ import (
 	"strings"
 
 	"github.com/minio/kes"
-	"github.com/minio/minio/internal/crypto"
-	"github.com/minio/minio/internal/etag"
-	"github.com/minio/minio/internal/fips"
-	xhttp "github.com/minio/minio/internal/http"
-	"github.com/minio/minio/internal/kms"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/crypto"
+	"github.com/foens/minio/internal/etag"
+	"github.com/foens/minio/internal/fips"
+	xhttp "github.com/foens/minio/internal/http"
+	"github.com/foens/minio/internal/kms"
+	"github.com/foens/minio/internal/logger"
 	"github.com/minio/sio"
 )
 

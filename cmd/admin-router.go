@@ -24,7 +24,7 @@ import (
 	"github.com/klauspost/compress/gzhttp"
 	"github.com/klauspost/compress/gzip"
 	"github.com/minio/madmin-go"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/logger"
 )
 
 const (

@@ -32,7 +32,7 @@ import (
 
 	_ "github.com/lib/pq" // Register postgres driver
 
-	"github.com/minio/minio/internal/event"
+	"github.com/foens/minio/internal/event"
 	xnet "github.com/minio/pkg/net"
 )
 

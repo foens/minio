@@ -26,8 +26,8 @@ import (
 
 	humanize "github.com/dustin/go-humanize"
 	"github.com/minio/madmin-go"
-	color "github.com/minio/minio/internal/color"
-	"github.com/minio/minio/internal/logger"
+	color "github.com/foens/minio/internal/color"
+	"github.com/foens/minio/internal/logger"
 	xnet "github.com/minio/pkg/net"
 )
 

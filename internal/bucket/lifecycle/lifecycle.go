@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	xhttp "github.com/minio/minio/internal/http"
+	xhttp "github.com/foens/minio/internal/http"
 )
 
 var (

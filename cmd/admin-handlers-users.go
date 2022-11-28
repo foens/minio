@@ -28,9 +28,9 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/minio/madmin-go"
-	"github.com/minio/minio/internal/auth"
-	"github.com/minio/minio/internal/config/dns"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/auth"
+	"github.com/foens/minio/internal/config/dns"
+	"github.com/foens/minio/internal/logger"
 	iampolicy "github.com/minio/pkg/iam/policy"
 )
 

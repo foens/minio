@@ -28,9 +28,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/minio/internal/bucket/lifecycle"
-	"github.com/minio/minio/internal/bucket/object/lock"
-	"github.com/minio/minio/internal/logger"
+	"github.com/foens/minio/internal/bucket/lifecycle"
+	"github.com/foens/minio/internal/bucket/object/lock"
+	"github.com/foens/minio/internal/logger"
 )
 
 func renameAllBucketMetacache(epPath string) error {

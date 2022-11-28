@@ -29,7 +29,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/minio/minio/internal/auth"
+	"github.com/foens/minio/internal/auth"
 	"github.com/minio/pkg/bucket/policy"
 	"github.com/minio/pkg/bucket/policy/condition"
 )
