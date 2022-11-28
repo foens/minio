@@ -798,10 +798,14 @@ func fromGCSAttrsToObjectInfo(attrs *storage.ObjectAttrs) minio.ObjectInfo {
 		e      error
 	)
 	for k, v := range attrs.Metadata {
-		k = http.CanonicalHeaderKey(k)
-		// Translate the GCS custom metadata prefix
-		if strings.HasPrefix(k, "X-Goog-Meta-") {
-			k = strings.Replace(k, "X-Goog-Meta-", "X-Amz-Meta-", 1)
+		// Translate old minio added metadata to the correct format
+		if strings.HasPrefix(http.CanonicalHeaderKey(k), "X-Goog-Meta-") {
+			k = fmt.Sprintf("X-Amz-Meta-%s", k[len("X-Goog-Meta-"):])
+			metadata[k] = v
+		} else
+		{
+			k = fmt.Sprintf("X-Amz-Meta-%s", k)
+			metadata[k] = v
 		}
 		if k == "Expires" {
 			if expiry, e = time.Parse(http.TimeFormat, v); e == nil {
@@ -809,7 +813,7 @@ func fromGCSAttrsToObjectInfo(attrs *storage.ObjectAttrs) minio.ObjectInfo {
 			}
 			continue
 		}
-		metadata[k] = v
+
 	}
 	if attrs.ContentType != "" {
 		metadata["Content-Type"] = attrs.ContentType
@@ -847,12 +851,12 @@ func fromGCSAttrsToObjectInfo(attrs *storage.ObjectAttrs) minio.ObjectInfo {
 // applyMetadataToGCSAttrs applies metadata to a GCS ObjectAttrs instance
 func applyMetadataToGCSAttrs(metadata map[string]string, attrs *storage.ObjectAttrs) {
 	attrs.Metadata = make(map[string]string)
-	for k, v := range metadata {
-		k = http.CanonicalHeaderKey(k)
+	for kOriginal, v := range metadata {
+		k := http.CanonicalHeaderKey(kOriginal)
 		switch {
 		case strings.HasPrefix(k, "X-Amz-Meta-"):
-			// Translate the S3 user-defined metadata prefix
-			k = strings.Replace(k, "X-Amz-Meta-", "x-goog-meta-", 1)
+			// Remove the S3 user-defined metadata prefix
+			k = kOriginal[len("X-Amz-Meta-"):]
 			attrs.Metadata[k] = v
 		case k == "Content-Type":
 			attrs.ContentType = v
