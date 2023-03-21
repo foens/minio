@@ -666,6 +666,9 @@ func (a *azureObjects) ListObjects(ctx context.Context, bucket, prefix, marker, 
 	containerURL := a.client.NewContainerURL(bucket)
 	for len(objects) == 0 && len(prefixes) == 0 {
 		resp, err := containerURL.ListBlobsHierarchySegment(ctx, azureListMarker, delimiter, azblob.ListBlobsSegmentOptions{
+			Details: azblob.BlobListingDetails{
+				Metadata: true,
+			},
 			Prefix:     prefix,
 			MaxResults: int32(maxKeys),
 		})
